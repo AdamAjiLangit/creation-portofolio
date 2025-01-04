@@ -29,7 +29,7 @@ export default function Footer() {
     const margin = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 0 : -100]);
 
     return (
-        <motion.div ref={container} className="text-white flex flex-col items-center justify-center bg-[#141516] relative">
+        <motion.div ref={container} className="text-white flex flex-col items-center justify-center pb-20 md:pb-0 bg-[#141516] relative">
             <div className="pt-20 w-full">
                 <div className="relative border-b border-gray-600 pb-[100px] mx-10 md:mx-[100px]">
                     <div className="flex flex-col gap-2">
