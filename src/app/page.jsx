@@ -1,16 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { NextUIProvider, Button } from '@nextui-org/react';
+import { NextUIProvider } from '@nextui-org/react';
 import { AnimatePresence } from 'framer-motion';
 import { ReactLenis } from '@studio-freight/react-lenis';
-import AnimatedButton from '@/components/ui/animated-button';
 import Preloader from '@/components/preloader/Preloader';
 import Hero from '@/components/pages/Landing/Hero';
 import { About } from '@/components/pages/Landing/About';
 import { Projects } from '@/components/pages/Landing/Projects';
 import Skills from '@/components/pages/Landing/Skills';
 import Gallery from '@/components/pages/Landing/Gallery';
+import Footer from '@/components/pages/Landing/Footer';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,11 +47,16 @@ export default function Home() {
         <AnimatePresence mode="wait">
           {isLoading && <Preloader />}
         </AnimatePresence>
-        {!isLoading && <Hero />}
-        <About />
-        <Projects />
-        <Skills />
-        <Gallery />
+        {!isLoading && (
+          <>
+            <Hero />
+            <About />
+            <Projects />
+            <Skills />
+            <Gallery />
+            <Footer />
+          </>
+        )}
       </ReactLenis>
     </NextUIProvider>
   );

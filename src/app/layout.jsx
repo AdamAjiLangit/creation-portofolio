@@ -3,7 +3,6 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/header/Navbar";
 import { FloatingDockDemo } from "@/components/header/FloatingDock";
 import "./globals.css";
-import Footer from "@/components/pages/Landing/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,7 +29,6 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <FloatingDockDemo />
-          <Footer />
         </ThemeProvider>
       </body>
     </html>
