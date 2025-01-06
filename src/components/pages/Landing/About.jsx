@@ -79,7 +79,7 @@ const Block = ({ className, ...rest }) => {
                 damping: 50,
             }}
             className={twMerge(
-                "block col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6",
+                "block col-span-4 rounded-lg border border-zinc-700 bg-zinc-800 p-6 z-[1]",
                 className
             )}
             {...rest}
