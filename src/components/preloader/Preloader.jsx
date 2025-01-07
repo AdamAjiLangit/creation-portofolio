@@ -41,7 +41,7 @@ const Preloader = () => {
             variants={preloaderSlideUp}
             initial="initial"
             exit="exit"
-            className='h-screen w-screen flex items-center justify-center fixed z-[99] bg-[#04101C]'
+            className='h-screen w-screen flex items-center justify-center fixed z-[9999] bg-[#04101C]'
         >
             {dimension.width > 0 &&
                 <>
