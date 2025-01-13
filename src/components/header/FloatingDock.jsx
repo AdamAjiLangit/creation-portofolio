@@ -3,21 +3,14 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-    IconBrandGithub,
-    IconBrandX,
-    IconExchange,
     IconHome,
-    IconNewSection,
-    IconTerminal2,
     IconUser,
     IconCircleDottedLetterJ,
-    IconHeart,
     IconHeartFilled,
 
 } from "@tabler/icons-react";
-import Image from "next/image";
 
-export function FloatingDockDemo() {
+export function FloatingDockMain() {
     const links = [
         {
             title: "Home",
@@ -51,7 +44,7 @@ export function FloatingDockDemo() {
     ];
     return (
         (<div className="flex items-center justify-center">
-            <div className="fixed bottom-5">
+            <div className="fixed bottom-5 z-[999]">
                 <FloatingDock
                     mobileClassName="translate-y-20"
                     items={links} />

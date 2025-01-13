@@ -29,7 +29,7 @@ export default function Footer() {
     const margin = useTransform(scrollYProgress, [0, 1], [0, isMobile ? 0 : -100]);
 
     return (
-        <motion.div ref={container} className="text-white flex flex-col items-center justify-center bg-[#141516] relative">
+        <motion.div ref={container} className="text-white flex flex-col items-center justify-center pb-20 md:pb-0 bg-[#141516] relative">
             <div className="pt-20 w-full">
                 <div className="relative border-b border-gray-600 pb-[100px] mx-10 md:mx-[100px]">
                     <div className="flex flex-col gap-2">
@@ -37,7 +37,7 @@ export default function Footer() {
                         <h2 className="text-[5vw] font-light m-0">together</h2>
                     </div>
                     <motion.div style={{ x: isMobile ? 200 : x }} className="hidden md:block absolute left-[calc(100%-400px)] top-[calc(100%-90px)]">
-                        <a href="mailto:adam.aji2007@gmail.com">
+                        <a href="mailto:adamajilangit@gmail.com">
                             <Rounded backgroundColor={"#334BD3"} className="w-[100px] h-[100px] md:w-[180px] md:h-[180px] bg-[#455CE9] text-white rounded-full flex items-center justify-center cursor-pointer">
                                 <p className="m-0 text-sm md:text-lg font-light relative z-10">Get in touch</p>
                             </Rounded>
@@ -48,9 +48,9 @@ export default function Footer() {
                     </motion.svg>
                 </div>
                 <div className="flex gap-5 mt-[100px] mx-10 md:mx-[100px]">
-                    <a href='mailto:adam.aji2007@gmail.com'>
+                    <a href='mailto:adamajilangit@gmail.com'>
                         <Rounded className="w-fit h-[50px] px-5 border border-white text-white rounded-full flex items-center justify-center cursor-pointer">
-                            <p>adam.aji2007@gmail.com</p>
+                            <p>adamajilangit@gmail.com</p>
                         </Rounded>
                     </a>
                 </div>
