@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { FiArrowRight, FiUser } from "react-icons/fi";
@@ -89,11 +90,19 @@ const Block = ({ className, ...rest }) => {
 
 const HeaderBlock = () => (
     <Block className="col-span-12 row-span-2 md:col-span-6">
-        <img
+        {/* <img
             src="/assets/images/avatar.png"
             alt="avatar"
             className="mb-4 size-14 rounded-full"
-        />
+        /> */}
+        <div className="flex items-start justify-start mb-4 w-full">
+            <DotLottieReact
+                src="https://lottie.host/d34b8e73-f42c-4ec5-a139-0e8204a266f3/xREJmzT1Nj.json"
+                loop
+                autoplay
+                className='rounded-full w-full'
+            />
+        </div>
         <h1 className="mb-12 text-base md:text-xl lg:text-4xl font-medium leading-tight">
             Hi, I'm Adam.{" "}
             <span className="text-zinc-400">
